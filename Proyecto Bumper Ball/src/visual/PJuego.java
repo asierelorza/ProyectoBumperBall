@@ -29,7 +29,7 @@ public class PJuego extends JPanel{
 
 	
 	private Rectangle I=new Rectangle(18, 248, 30, 100);
-	private Rectangle D=new Rectangle(850,248,30,100);
+	private Rectangle D=new Rectangle(860,248,30,100);
 
 	/** Constructor
 	 * 
@@ -82,32 +82,16 @@ public class PJuego extends JPanel{
 		
 		
 		
-		
-		
-		
-
-//		int width = this.getSize().width;
-//		int height = this.getSize().height;
-//		
-//		ImageIcon imagenFondo = new ImageIcon(getClass().getResource("imagenes/Campo.png"));
-//		g.drawImage(imagenFondo.getImage(),0,0,width, height, null);
-//		setOpaque(false);
-//		pel.paraelpaint(g);
-	
-//		
-	
 	}
 	
 	public void logicaGol(){
 		if(I.contains(pelota.getPosX()+20, pelota.getPosY()+20)){
-//			System.out.println("bordes porteria izquierda: " + I.getBounds());
-//			System.out.println("Pelota: " + pelota.getPosX() + " | " + pelota.getPosY());
+
 			golA = true;
 			
 		}
 		else if(D.contains(pelota.getPosX()+20, pelota.getPosY()+20)){
-//			System.out.println("bordes porteria derecha: " + D.getBounds());
-//			System.out.println("Pelota: " + pelota.getPosX() + " | " + pelota.getPosY());
+
 			golB = true;
 			
 		}
@@ -120,8 +104,6 @@ public class PJuego extends JPanel{
 		
 		
 	}
-//	public boolean logicaGol(){
-//		for(pelota.get)
-//	}
+
 }
 

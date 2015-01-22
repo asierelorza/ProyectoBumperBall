@@ -109,7 +109,7 @@ public class VentanaPrincipal extends JFrame{
 		cron.iniciarCronometro();
 		cron.setLocation(515, 0);
 		
-		panel.setBounds(0,40,900,600);
+		panel.setBounds(0,40,910,610);
 		panel.setLayout(null);
 		panel.setBorder(border);
 		
@@ -361,13 +361,15 @@ public class VentanaPrincipal extends JFrame{
 		try{
 			final VentanaPrincipal v = new VentanaPrincipal(minutos, segundos, golesA, golesB, minAsign, segAsign, nomJug1, nomJug2);
 			
+			
+			v.setResizable(false);
 			v.setLocationRelativeTo(null);
 			v.setBackground(Color.GRAY);
 			v.setVisible(true);
 			v.bumper = new MundoBumper(v.panel);
 			v.bumper.creaCocheRojo(70, v.getHeight()/2-75);
 			v.bumper.creaCocheVerde(750, v.getHeight()/2-75);
-			v.panel.creaPelota(438, 287);
+			v.panel.creaPelota(445, 295);
 			
 			v.cocheRojo = v.bumper.getCocheRojo();
 			v.cocheVerde = v.bumper.getCocheVerde();
